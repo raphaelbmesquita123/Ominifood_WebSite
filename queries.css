@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1200px){
+
+ 
+}
+
+@media only screen and (max-width: 1023px){
+    .displayGetFood{flex-wrap: wrap;}
+    .SectionfoodFast{padding: 20px;}
+
+    /* SECTION EATING HEALTHY */
+    .startEat{padding: 20px;
+        padding-top: 80px;
+        padding-bottom: 60px}
+
+    .startEatFlex{
+        flex-wrap: wrap;
+        justify-content: none;
+    }
+
+    .startEatBoxes{margin-bottom: 50px;}
+}
+
+@media only screen and (max-width: 880px){
+    .navBar ul{ display: none; }
+    .textTopSite{margin-bottom: 30%;}
+    .textTopSite h1{font-size: 200%;}
+    .ourCustomers{padding:20px}
+    .ourCustomersBox{flex-wrap: wrap;}
+    .BoxTextCustumer{padding-bottom: 100px;}
+
+@media only screen and (max-width: 767px){
+    .navBar ul{ display: none; }
+    .textTopSite{margin-bottom: 60%;}
+    .textTopSite h1{font-size: 120%;}
+    .itWorksBox{flex-wrap: wrap;}
+    .itWorkText{margin-left: 0px;}
+
+}
+
+@media only screen and (max-width: 480px){
+    
+}

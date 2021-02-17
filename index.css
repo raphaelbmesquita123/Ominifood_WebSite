@@ -1,0 +1,439 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto','Arial';
+    list-style: none;
+    text-decoration: none;
+}
+
+
+h1,h2, h3, p,a{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 180%;
+    font-weight: 300;
+}
+
+h2::after{
+    display: block;
+    height: 3px;
+    background-color: orangered;
+    content: "";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+/*=================================================
+                BUTTONS
+=================================================*/
+
+.btn-full{
+    color: white;
+    font-size: 90%;
+    font-weight: 300;
+    border: 2px solid orangered;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    background-color: orangered;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-ghost{
+    color: white;
+    font-size: 90%;
+    font-weight: 300;
+    border: 2px solid orangered;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.2s, border-color 0.2s
+}
+
+.btn-full:hover,
+.btn-ghost:hover{
+    background-color: rgb(194, 52, 1);
+    border-color: rgb(194, 52, 1);
+}
+
+/*=================================================
+                ICONS
+=================================================*/
+
+.icon-big{
+    font-size: 300%;
+    color: orangered;
+}
+
+.icon-small{
+    color: orangered;
+}
+
+
+/*=================================================
+                HEADER WEBSITE 
+=================================================*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(imagens/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.topSite{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textTopSite{
+    margin-bottom: 200px;
+}
+
+.textTopSite h1{
+    font-size: 250%;
+    color: white;
+    font-weight: 300;  
+    margin-bottom: 30px;
+}
+
+.textTopSite a:last-child{
+    margin-left: 10px;
+}
+
+.navBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navBar img{
+    height: 100px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.navBar ul{
+    display: flex;
+}
+
+.navBar ul a{
+    color: white;
+    margin-right: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: none;
+    transition: border-bottom 0.3s;
+}
+
+.navBar ul a:hover{
+    border-bottom: 3px solid orangered;
+}
+
+/*=================================================
+          GET FOOD FAST - NOT FAST FOOD 
+=================================================*/
+
+.SectionfoodFast{
+    display: block;
+    padding: 60px;
+    text-align: center;
+}
+
+section div h2{
+    margin-bottom: 30px;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.displayGetFood{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+
+.displayGetFoodItens{
+    padding: 20px;
+}
+
+.displayGetFoodItens h3{
+    font-weight: 400;
+    margin: 10px;
+}
+
+.displayGetFoodItens p{
+    font-size: 100%;
+    font-weight: 300;
+    text-align: justify;
+    margin: 10px
+}
+
+/*=================================================
+             SECTION IMAGES 
+=================================================*/
+
+.sectionImages{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  
+}
+
+.imagenFlex{
+    display: flex;
+}
+
+.imagenFlex div{
+    display: block;
+    background-color: black;
+    
+}
+
+.imagenFlex img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    scale: 1;
+    transition: opacity 0.4s, width 0.15s, height 0.15s;
+}
+
+.imagenFlex img:hover{
+    opacity: 1;
+}
+
+/*=================================================
+             SECTION HOW IT WORKS 
+=================================================*/
+
+.howItWorks{
+    text-align: center;
+    padding: 80px;
+    background-color: rgb(243, 243, 243);
+}
+
+.itWorksBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.itWorksBox div img{
+    height: 400px;
+}
+
+.itWorkText{
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 15px
+}
+
+.itWorksBox h3{
+    font-size: 150%;
+    border: 2px solid orangered;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    color: orangered;
+    font-weight: 300;
+}
+
+.itWorksImg img {
+    margin: 50px 10px 0px 10px;
+    height: 60px;
+}
+
+/*=================================================
+              SECTION CITIES 
+=================================================*/
+
+.cities{
+    text-align: center;
+    padding: 80px;
+}
+
+.citiesPhotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.citiesPhotos img{
+    height: 180px;
+    padding: 30px 15px 20px 15px;
+}
+
+.citiesPhotos h3{
+    color: orangered;
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.citiesIconText{
+    display: flex;
+    margin-left: 13px;
+    margin-top: 10px;    
+    align-items: center;
+} 
+
+.citiesIconText p{
+    margin-left: 10px;
+}
+
+.citiesIconText a{
+    color: orangered;
+    border: none;
+    transition: color 0.3s, border 0.3s;
+}
+
+.citiesIconText a:hover{
+    color: rgb(194, 52, 1);
+    border-bottom: 2px solid rgb(194, 52, 1);
+}
+
+/*=================================================
+              SECTION OUR CUSTOMERS
+=================================================*/
+
+.ourCustomers{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(41, 1, 1, 0.8)), url(imagens/back-customers.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px;
+    color: white;
+}
+
+.ourCustomersBox{
+    display: flex;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.BoxTextCustumer{
+    margin: 0px 25px 0px 25px;
+}
+
+.BoxTextCustumer p{
+    font-size: 100%;
+    font-style: italic;
+}
+
+.BoxTextCustumer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.BoxTextCustumer img{
+    border: 2px solid orangered;
+    border-radius: 50%;
+    height: 80px;
+    float: left;
+}
+
+.BoxTextCustumer h3{
+    margin-top: 10px;
+}
+
+/*=================================================
+             SECTION EATING HEALTHY
+=================================================*/
+
+.startEat{
+    text-align: center;
+    padding: 80px;
+    background-color:rgb(243, 243, 243);
+}
+
+.startEatFlex{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.startEatBoxes{
+    background-color: white;
+    border:20px solid white;
+    border-radius: 10px;
+    box-shadow: -9px 11px 7px -5px rgb(202, 200, 200);
+}
+
+.startEatBoxes h3{
+    font-weight: 500;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.startEatPrice{ 
+    font-size: 300%;
+    color: orangered;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.startEatText{
+    font-size: 80%;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+.startEatBoxes ul{
+    text-align: left;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+.startEatBoxes ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btnPrice{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.btnColor{
+    color: orangered;
+}
+
+.btnColor:hover{
+    color:rgb(194, 52, 1) ;
+}
+
+/*=================================================
+            SECTION HAPPY TO HEAR 
+=================================================*/
+
+.happyToHear{
+    text-align: center;
+    padding: 80px;
+}
+
