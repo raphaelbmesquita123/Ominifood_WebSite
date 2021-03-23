@@ -45,10 +45,9 @@
 }
 
 @media only screen and (max-width: 480px){
-  header{padding: 20px;}
-  .navBar ul{
-    margin-top: 20px;
-  }
+  header{border: 20px;}
+  .navBar ul{margin-top: 20px;}
+  .textTopSite{padding: 10px;}
   .textTopSite h1{font-size: 150%;}
   .btn{padding: 10px;}
 }
