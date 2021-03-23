@@ -1,8 +1,3 @@
-@media only screen and (max-width: 1200px){
-
- 
-}
-
 @media only screen and (max-width: 1023px){
     .displayGetFood{flex-wrap: wrap;}
     .SectionfoodFast{padding: 20px;}
@@ -21,15 +16,27 @@
 }
 
 @media only screen and (max-width: 880px){
-    .navBar ul{ display: none; }
+    .navBar ul{
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .navBar ul li{
+      margin-top: 10px;
+    }
+    .navBar img{
+      margin-left: 10px;
+      margin-top: 0px;
+    }
+
     .textTopSite{margin-bottom: 30%;}
     .textTopSite h1{font-size: 200%;}
     .ourCustomers{padding:20px}
     .ourCustomersBox{flex-wrap: wrap;}
     .BoxTextCustumer{padding-bottom: 100px;}
-
+}
 @media only screen and (max-width: 767px){
-    .navBar ul{ display: none; }
+    
     .textTopSite{margin-bottom: 60%;}
     .textTopSite h1{font-size: 120%;}
     .itWorksBox{flex-wrap: wrap;}
@@ -38,5 +45,10 @@
 }
 
 @media only screen and (max-width: 480px){
-    
+  header{padding: 20px;}
+  .navBar ul{
+    margin-top: 20px;
+  }
+  .textTopSite h1{font-size: 150%;}
+  .btn{padding: 10px;}
 }
